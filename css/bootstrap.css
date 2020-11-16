@@ -1421,54 +1421,13 @@ a:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
-
-figure {
-    margin: 0
-}
-
-img {
-    vertical-align: middle
-}
-
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img,
-.img-responsive,
-.thumbnail a>img,
-.thumbnail>img {
-    display: block;
-    max-width: 100%;
-    height: auto
-}
-
-.img-rounded {
-    border-radius: 6px
-}
-
-.img-thumbnail {
-    display: inline-block;
+.img-responsive{
     max-width: 100%;
     height: auto;
-    padding: 4px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    display: block;
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
-
-.img-circle {
-    border-radius: 50%
-}
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -1658,7 +1617,7 @@ mark {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
 }
 
 .text-justify {
@@ -1782,19 +1741,9 @@ a.bg-danger:hover {
     border-bottom: 1px solid #eee
 }
 
-ol,
 ul {
-    margin-top: 0;
     margin-bottom: 10px
 }
-
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-    margin-bottom: 0
-}
-
 .list-unstyled {
     padding-left: 0;
     list-style: none
@@ -4201,9 +4150,8 @@ fieldset[disabled] .btn-link:hover {
 .btn-group-lg>.btn,
 .btn-lg {
     padding: 10px 16px;
-    font-size: 18px;
     line-height: 1.3333333;
-    border-radius: 6px
+    font-weight: 700;
 }
 
 .btn-group-sm>.btn,
@@ -4211,7 +4159,6 @@ fieldset[disabled] .btn-link:hover {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px
 }
 
 .btn-group-xs>.btn,
@@ -4219,29 +4166,18 @@ fieldset[disabled] .btn-link:hover {
     padding: 1px 5px;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 3px
 }
 
 .btn-block {
     display: block;
-    width: 100%
-}
 
-.btn-block+.btn-block {
-    margin-top: 5px
-}
-
-input[type=button].btn-block,
-input[type=reset].btn-block,
-input[type=submit].btn-block {
-    width: 100%
 }
 
 .fade {
     opacity: 0;
     -webkit-transition: opacity .15s linear;
     -o-transition: opacity .15s linear;
-    transition: opacity .15s linear
+    transition: opacity .15s linear;
 }
 
 .fade.in {
@@ -5245,7 +5181,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-nav {
-    margin: 7.5px -15px
+    margin-right: 100px;
 }
 
 .navbar-nav>li>a {
